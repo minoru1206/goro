@@ -4626,7 +4626,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 main {
@@ -4634,7 +4634,7 @@ main {
   padding-top: 20px;
   background: yellow;
   padding-bottom: 50px;
-  min-height: 10000px;
+  min-height: 2000px;
 }
 
 article {

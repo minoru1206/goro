@@ -75,7 +75,7 @@ export default {
       type: Object | Array
     }
   },
-  methods: {
+    methods: {
     logout() {
       document.querySelector("#logout-form").submit();
     }
