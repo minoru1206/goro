@@ -112,8 +112,8 @@ export default {
       .get(`/api/quiz?categories=${categories}`)
       .then(response => {
         this.quizData = response.data;
-        if (this.quizData.length < 100) {
-          alert("クイズ100問以下のため、初期画面に戻ります。カテゴリーを選択し直してください");
+        if (this.quizData.length < 10) {
+          alert("クイズ10問以下のため、初期画面に戻ります。カテゴリーを選択し直してください");
           location.href = "/";
         } else {
           this.findNextQuiz(0);
@@ -143,7 +143,7 @@ export default {
       }
       // 回答済み
       this.isAlreadyAnswered = true;
-      if (this.quizNumber >= 100) {
+      if (this.quizNumber >= 10) {
         this.endQuiz();
       }
     },
@@ -162,7 +162,7 @@ export default {
     },
     goNextQuiz() {
       // 次の問題へをクリック
-      if (this.quizNumber >= 100) {
+      if (this.quizNumber >= 10) {
         this.endQuiz();
       } else {
         this.findNextQuiz(this.quizNumber);
@@ -178,7 +178,7 @@ export default {
       this.isAlreadyAnswered = true;
       this.correctPercentageObject = {
         correctScore: this.score,
-        mistakeScore: 100 - this.score
+        mistakeScore: 10 - this.score
       };
     },
     showResult() {

@@ -2842,8 +2842,8 @@ __webpack_require__.r(__webpack_exports__);
     this.$http.get("/api/quiz?categories=".concat(categories)).then(function (response) {
       _this.quizData = response.data;
 
-      if (_this.quizData.length < 100) {
-        alert("クイズ100問以下のため、初期画面に戻ります。カテゴリーを選択し直してください");
+      if (_this.quizData.length < 10) {
+        alert("クイズ10問以下のため、初期画面に戻ります。カテゴリーを選択し直してください");
         location.href = "/";
       } else {
         _this.findNextQuiz(0);
@@ -2875,7 +2875,7 @@ __webpack_require__.r(__webpack_exports__);
 
       this.isAlreadyAnswered = true;
 
-      if (this.quizNumber >= 100) {
+      if (this.quizNumber >= 10) {
         this.endQuiz();
       }
     },
@@ -2889,7 +2889,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     goNextQuiz: function goNextQuiz() {
       // 次の問題へをクリック
-      if (this.quizNumber >= 100) {
+      if (this.quizNumber >= 10) {
         this.endQuiz();
       } else {
         this.findNextQuiz(this.quizNumber);
@@ -2905,7 +2905,7 @@ __webpack_require__.r(__webpack_exports__);
       this.isAlreadyAnswered = true;
       this.correctPercentageObject = {
         correctScore: this.score,
-        mistakeScore: 100 - this.score
+        mistakeScore: 10 - this.score
       };
     },
     showResult: function showResult() {
