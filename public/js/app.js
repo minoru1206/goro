@@ -55330,7 +55330,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("footer", [
       _c("div", { staticClass: "container text-center" }, [
-        _c("small", [_vm._v("2020 ゴロタン. All rights reserved.")])
+        _c("small", [_vm._v("2020 ゴロタン. All rights reserved.")]),
+        _c("br"),
+        _vm._v(" "),
+        _c("small", [
+          _vm._v(
+            "お問い合わせは、gorotan.english@gmail.comまでお願いいたします。"
+          )
+        ])
       ])
     ])
   }
