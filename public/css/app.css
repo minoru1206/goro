@@ -4559,7 +4559,7 @@ header h1 {
 }
 
 header .navbar-brand {
-  color: #fff;
+  color: black;
 }
 
 header .navbar {
@@ -4577,28 +4577,28 @@ header .header-nav__drop-down {
 }
 
 header #header-nav__home {
-  color: #fff;
+  color: black;
 }
 
 header #header-nav__login {
-  color: #fff;
+  color: black;
 }
 
 header #header-nav__register {
-  color: #fff;
+  color: black;
 }
 
 header #header-nav__name {
-  color: #fff;
+  color: black;
 }
 
 header #header-nav__mypage {
-  color: #fff;
+  color: black;
   margin: auto;
 }
 
 header #header-nav__logout {
-  color: #fff;
+  color: black;
   margin: auto;
 }
 

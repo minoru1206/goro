@@ -8,7 +8,7 @@ header {
   }
 
   .navbar-brand {
-    color: $white;
+    color: black;
   }
 
   .navbar {
@@ -29,28 +29,28 @@ header {
   #header {
     &-nav {
       &__home {
-        color: $white;
+        color: black;
       }
 
       &__login {
-        color: $white;
+        color: black;
       }
 
       &__register {
-        color: $white;
+        color: black;
       }
 
       &__name {
-        color: $white;
+        color: black;
       }
 
       &__mypage {
-        color: $white;
+        color: black;
         margin: auto;
       }
 
       &__logout {
-        color: $white;
+        color: black;
         margin: auto;
       }
     }
