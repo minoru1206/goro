@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container text-center">
-      <h3>ゴロタン ゴロで覚える英単語クイズ!</h3>
+      <h3>【英語】楽しく語呂で英語を覚えるための、面白い英単語のクイズ！～ゴロタン～</h3>
       <h4><router-link to="/">
         <img class="header-nav__logo" src="/images/header-logo.png" />
       </router-link></h4>
